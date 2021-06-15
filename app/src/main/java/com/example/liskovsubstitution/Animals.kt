@@ -10,8 +10,8 @@ abstract class Animals {
 
     abstract fun color(): String
 
-    fun dimensions(size: Int): String {
-        when (size) {
+    fun dimensions(weight: Int): String {
+        when (weight) {
             in 1..50 -> {resultSize = "i'm tiny"}
             in 51..100 -> {resultSize = "i'm a huge animal"}
         }

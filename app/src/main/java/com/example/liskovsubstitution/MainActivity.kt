@@ -15,6 +15,9 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     var animals: Animals? = null
+    var fly: String? = null
+    var animalsColor: String? = null
+    var animalsDimensions: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -57,62 +60,62 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private fun setUpAnt() {
         animals = Ant()
 
-        val fly = animals?.checkFly(false)
-        val antColor = animals?.color()
-        val antDimensions = animals?.dimensions(50)
+        fly = animals?.checkFly(false)
+        animalsColor = animals?.color()
+        animalsDimensions = animals?.dimensions(50)
 
         showResultFlyTextView.text = fly
-        showResultColorTextView.text = antColor
-        Toast.makeText(this, antDimensions, Toast.LENGTH_LONG).show()
+        showResultColorTextView.text = animalsColor
+        Toast.makeText(this, animalsDimensions, Toast.LENGTH_LONG).show()
     }
 
     private fun setUpDuck() {
         animals = Duck()
 
-        val fly = animals?.checkFly(false)
-        val duckColor = animals?.color()
-        val duckDimensions = animals?.dimensions(50)
+        fly = animals?.checkFly(false)
+        animalsColor = animals?.color()
+        animalsDimensions = animals?.dimensions(50)
 
 
         showResultFlyTextView.text = fly
-        showResultColorTextView.text = duckColor
-        Toast.makeText(this, duckDimensions, Toast.LENGTH_LONG).show()
+        showResultColorTextView.text = animalsColor
+        Toast.makeText(this, animalsDimensions, Toast.LENGTH_LONG).show()
     }
 
     private fun setUpEagle() {
         animals = Eagle()
 
-        val fly = animals?.checkFly(true)
-        val eagleColor = animals?.color()
-        val eagleDimensions = animals?.dimensions(100)
+        fly = animals?.checkFly(true)
+        animalsColor = animals?.color()
+        animalsDimensions = animals?.dimensions(100)
 
         showResultFlyTextView.text = fly
-        showResultColorTextView.text = eagleColor
-        Toast.makeText(this, eagleDimensions, Toast.LENGTH_LONG).show()
+        showResultColorTextView.text = animalsColor
+        Toast.makeText(this, animalsDimensions, Toast.LENGTH_LONG).show()
     }
 
     private fun setUpElephant() {
         animals = Elephant()
 
-        val fly = animals?.checkFly(false)
-        val elephantcolor = animals?.color()
-        val elephantDimensions = animals?.dimensions(51)
+        fly = animals?.checkFly(false)
+        animalsColor = animals?.color()
+        animalsDimensions = animals?.dimensions(51)
 
         showResultFlyTextView.text = fly
-        showResultColorTextView.text = elephantcolor
-        Toast.makeText(this, elephantDimensions, Toast.LENGTH_LONG).show()
+        showResultColorTextView.text = animalsColor
+        Toast.makeText(this, animalsDimensions, Toast.LENGTH_LONG).show()
     }
 
     fun setUpBabyElephant() {
         animals = BabyElephant()
 
-        val fly = animals?.checkFly(false)
-        val elephantcolor = animals?.color()
-        val elephantDimensions = animals?.dimensions(51)
+        fly = animals?.checkFly(false)
+        animalsColor = animals?.color()
+        animalsDimensions = animals?.dimensions(51)
 
         showResultFlyTextView.text = fly
-        showResultColorTextView.text = elephantcolor
-        Toast.makeText(this, elephantDimensions, Toast.LENGTH_LONG).show()
+        showResultColorTextView.text = animalsColor
+        Toast.makeText(this, animalsDimensions, Toast.LENGTH_LONG).show()
 
     }
 }
