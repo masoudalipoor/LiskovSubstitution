@@ -8,7 +8,7 @@ abstract class Animals {
     private lateinit var resultSize: String
 
 
-    abstract fun color(): String
+    abstract fun color(): String 
 
     fun dimensions(weight: Int): String {
         when (weight) {
