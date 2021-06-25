@@ -15,7 +15,7 @@ abstract class Animals {
             in 1..50 -> {resultSize = "i'm tiny"}
             in 51..100 -> {resultSize = "i'm a huge animal"}
         }
-        return resultSize
+        return resultSize 
     }
 
     fun checkFly(fly: Boolean): String {
